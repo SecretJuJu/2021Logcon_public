@@ -1,0 +1,19 @@
+<form method="post" enctype="multipart/form-data">
+    Title : <input type="text" name="title" placeholder="Title"> <br>
+    Contents <br> <textarea name="contents" placeholder="contents"></textarea><br>
+    Score : <input type="number" name="score"> <br>
+    Answer : <input type="text" name="answer"> <br>
+    File_link : <input type="text" name="file_link"> <br>
+    Category <br> 
+    network:<input type="radio" name="category" value="network">
+    server:<input type="radio" name="category" value="server"/>
+    web:<input type="radio" name="category" value="web"/>
+    crypto:<input type="radio" name="category" value="crypto"/>
+    database:<input type="radio" name="category" value="database"/>
+    <br>
+    <div class="images">
+        images : <input type="file" name="images"multiple>
+    </div>
+    <br>
+    <input type="submit" value="제출">
+</form>

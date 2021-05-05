@@ -1,0 +1,74 @@
+<table border="1">
+    <tr>
+        <td>
+            num
+        </td>
+        <td>
+            id
+        </td>
+        <td>
+            email
+        </td>
+        <td>
+            auth
+        </td>
+        <td>
+            school_name
+        </td>
+        <td>
+            school_level
+        </td>
+        <td>
+            isAdmin
+        </td>
+        <td>
+            createdAt
+        </td>
+        <td>
+            score
+        </td>
+        <td>
+            score
+        </td>
+        <td>
+            redirect
+        </td>
+    </tr>
+<% for (var i=0; i < results.length; i++) { %>
+    <tr>
+        <td>
+            <%= results[i]['pk'] %>
+        </td>
+        <td>
+            <%= results[i]['id'] %>
+        </td>
+        <td>
+            <%= results[i]['email'] %>
+        </td>
+        <td>
+            <%= results[i]['authenticated'] %>
+        </td>
+        <td>
+            <%= results[i]['school_name'] %>
+        </td>
+        <td>
+            <%= results[i]['school_level'] %>
+        </td>
+        <td>
+            <%= results[i]['isAdmin'] %>
+        </td>
+        <td>
+            <%= results[i]['createdAt'] %>
+        </td>
+        <td>
+            <%= results[i]['solve'] %>
+        </td>
+        <td>
+            <%= results[i]['score'] %>
+        </td>
+        <td>
+            <a href="/admin/DMember/<%=results[i]['pk'] %> ">삭제</a>
+        </td>
+    </tr>
+<% } %>
+</table>

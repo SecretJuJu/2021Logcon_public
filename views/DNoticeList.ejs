@@ -1,0 +1,26 @@
+<table border="1">
+    <tr>
+        <td>
+            num
+        </td>
+        <td>
+            title
+        </td>
+        <td>
+            redircet
+        </td>
+    </tr>
+<% for (var i=0; i < results.length; i++) { %>
+    <tr>
+        <td>
+            <%= results[i]['pk'] %>
+        </td>
+        <td>
+            <%= results[i]['title'] %>
+        </td>
+        <td>
+            <a href="/admin/DNotice/<%=results[i]['pk'] %> ">삭제</a>
+        </td>
+    </tr>
+<% } %>
+</table>

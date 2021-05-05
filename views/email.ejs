@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LOGCON</title>
+    <link rel="shortcut icon" href="images/logo/logcon-logo-24.png">
+    <!-- Compiled and minified -->
+    <link rel="stylesheet" href="https://cdn.shopify.com/s/files/1/1775/8583/t/1/assets/admin-materialize.min.css?2711767630378816724">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- Local -->
+    
+    <!-- <script src="../public/scripts/main.js"></script> -->
+    <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <!-- Localhost -->
+    <link rel="stylesheet" href="/assets/css/auth.css">
+    <script src="/assets/js/auth.js"></script>
+
+</head>
+<body>
+    <div id="alarm-cover">
+        <div id="alarm-content">
+            <p>
+                입력하셨던 이메일로 인증 코드가 전송되었습니다.<br>
+                인증 코드를 입력해주세요.
+            </p>
+            <form method="POST" class="row">
+                <div class="input-field col s12">
+                    <input name="authcode" id="auth" type="text" class="validate">
+                    <label for="auth">인증 코드</label>
+                    <div style="display: flex;flex-direction: row;justify-content:flex-end;">
+                        <input type="submit" value="인증">
+                    </div>
+                        
+                </div>
+            </form>
+            <ul class="collapsible">
+                <li>
+                    <div class="collapsible-header" onclick="slideDown()">인증 코드가 오지 않았나요?</div>
+                    <div class="collapsible-body">
+                        <form method="POST" action="/member/resend_email" class="row">
+                            <div class="input-field col s12">
+                                <button>
+                                    이메일 재발송
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>

@@ -1,0 +1,24 @@
+<form method="post" enctype="multipart/form-data">
+    PK : <input type="number" name="pk" value=<%= pk %> readonly> <br>
+    Title : <input type="text" name="title" value="<%= title %>" placeholder="Title"> <br>
+    Contents <br> <textarea name="contents" placeholder="contents"><%= contents %></textarea><br>
+    Score : <input type="number" name="score" value=<%= score %>> <br>
+    Answer : <input type="text" name="answer" value="<%= answer %>"> <br>
+    File_link : <input type="text" name="file_link" value="<%= file %>"> <br>
+    Category <br> 
+    network:<input type="radio" name="category" id="network" value="network"/>
+    server:<input type="radio" name="category" id="server" value="server"/>
+    web:<input type="radio" name="category" id="web" value="web"/>
+    crypto:<input type="radio" name="category" id="crypto" value="crypto"/>
+    database:<input type="radio" name="category" id="database" value="database"/>
+    <br>
+    <div class="images">
+        images : <input type="file" name="images"multiple>
+    </div>
+    <br>
+    <input type="submit" value="제출">
+</form>
+
+<script>
+    document.getElementById("<%= radio %>").checked = true
+</script>

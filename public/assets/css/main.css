@@ -1,0 +1,243 @@
+@font-face { 
+    font-family: 'NanumGothic';
+    src: url('/assets/font/NanumGothic.eot');
+    src: url('/assets/font/NanumGothic.eot') format('embedded-opentype'),
+    url('/assets/font/NanumGothic.woff') format('woff');
+}
+
+
+
+
+.canvas_img{
+    height: auto;
+    width: 500px;
+}
+
+.navbar-nav{
+    width: 100%;
+}
+
+.nav-right{
+    width: 100%;
+    float: right;
+    text-align: right;
+}
+
+@media only screen and (max-width: 600px) 
+{
+    .canvas_img{
+        height: auto;
+        width: 250px;
+    }
+}
+
+#particles-js {
+    position : absolute;
+    width:100%;
+    height:100%;
+}
+
+.panel.panel-default{
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 1px solid #714cdf;
+    background-color: #0c0d16;
+}
+
+
+.solved .card {
+    background-color:rgba(50,50,50,0.9)
+}
+
+.solved .card .card-header {
+    background-color: #dc3545;
+}
+
+.solved  h4{
+    color : #ff3c5c;
+}
+
+.solved .btn-outline-secondary {
+    color: #ff3c5c;
+    border-color : #ff3c5c;
+}
+.solved .btn-outline-secondary:hover {
+    color: #fff;
+    border-color : #ff3c5c;
+}
+
+.category_network .card-body{
+    background-image: url(/assets/img/categories/network.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.category_web .card-body{
+    background-image: url(/assets/img/categories/web.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.category_server .card-body{
+    background-image: url(/assets/img/categories/server.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.category_crypto .card-body{
+    background-image: url(/assets/img/categories/crypto.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.category_database .card-body{
+    background-image: url(/assets/img/categories/database.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+
+#svgContainer { 
+	z-index: -10;
+	position:absolute;
+}
+
+.mb-10{
+    margin-bottom: 6rem !important;
+}
+
+
+a:focus {
+    outline:none;
+}
+a::-moz-focus-inner {
+    border:0;
+}
+/* CLOCK */
+.countdown-timer {
+    zoom: 0.5;
+    -moz-transform: scale(0.5);
+}
+
+.footer img{
+    width: 60%;
+}
+
+.order-md-2 pre{
+    font-size: 1.5em;
+    font-weight: 500;
+    white-space: pre-line;
+    line-height: 120%;
+    margin-bottom: 1em;
+    font-family: 'NanumGothic', 'serif';
+}
+
+#flag_form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 3em;
+}
+#flag_form .flag{
+    display: flex;
+    width: 100%;
+}
+
+#flag_form .flag .flag_input {
+    padding-left: 15px;
+    width: 90%;
+}
+
+#flag_form button[type=submit] {
+    width: 15%;
+    background-color:#26A79A;
+    color : #fff;
+    border : 2px solid #fff;
+    border-radius: 3px;
+}
+
+
+.content__title,h1 { 
+    color : rgba(50,50,50,0.95);
+}
+
+.notices { 
+    margin-top : 3rem;
+    justify-content: center;
+}
+
+.notice {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.notice>div {
+    display: flex;
+    justify-content: right;
+    flex-direction: column;
+}
+.notice>div>p {
+    color : rgba(50,50,50,0.95);
+}
+
+.notice>div>span {
+    text-align: right;    
+}
+
+.school_level_btn_box {
+    display: flex;
+    justify-content: flex-end;
+    background: #fff;
+    height: 35px;
+}
+.school_level_btn_box button{
+    background: #32334a;
+    color: #fff;
+    border: 0;
+    margin: 0;
+    outline: none;
+    height: 100%;
+    width: 50%;
+
+}
+
+.order-md-2 textarea { 
+    resize: none;
+    overflow: scroll;
+    min-height: 50px;
+    width:100%;
+    background-color: #F8F8FF;
+    color: #11111d;
+    border-color: var(--red) ;
+}
+
+.fixed-input { 
+    background-color: #F8F8FF;
+    color: #11111d;
+    border-color: var(--red) ;
+}
+
+
+#main-cont .container {
+    flex-direction: row;
+}
+#main-cont .container .col {
+    width: 50%;
+}
+#main-cont .container .col img {
+    width: 70%;
+}
+
+#main-cont .container .col .col-xl-6 {
+    width: 90%;
+    margin: 0 !important;
+}
+
+@media (max-width:768px) {
+
+    #main-cont .container {
+        flex-direction: column;
+    }
+    #main-cont .container .col {
+        width: 100%;
+        margin-bottom: 4rem;
+    }
+}

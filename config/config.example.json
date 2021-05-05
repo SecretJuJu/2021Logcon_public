@@ -1,0 +1,19 @@
+{
+    "db_connection":{ 
+        "username" : "imuser!",
+        "password" : "password",
+        "database" : "logcon",
+        "host" : "127.0.0.1",
+        "dialect" : "mysql",
+        "timezone": "+09:00",
+        "port" : 3306,
+        "logging": false
+    },
+    "mail_info" : {
+        "service" : "gmail",
+        "host" : "smtp.gmail.com",
+        "port" : "587",
+        "user" : "logconmail2021@gmail.com",
+        "pass" : "password"
+    }
+}

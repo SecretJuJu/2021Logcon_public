@@ -1,0 +1,25 @@
+<div class="navbar-dark text-white">
+  <div class="container">
+    <nav class="navbar px-0 navbar-expand-lg navbar-dark">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a href="/" class="pl-md-0 p-3 text-light">Home</a>
+          <a href="/notice" class="p-3 text-decoration-none text-light">Notice</a>
+          <% if(!data.pk){ %>
+            <a href="/member/login" class="p-3 text-decoration-none text-light">Login</a>
+            <a href="/member/register" class="p-3 text-decoration-none text-light active">Register</a>
+          <% } else { %>
+            <a href="/member/profile/<%= data.pk %>" class="p-3 text-decoration-none text-light">Profile</a>
+            <a href="/rank" class="p-3 text-decoration-none text-light">Rank</a>
+            <a href="/challenges" class="p-3 text-decoration-none text-light">Challenges</a>
+            <a href="/member/logout" class="p-3 text-decoration-none text-light">Logout</a>
+          <% } %>
+        </div>
+      </div>
+    </nav>
+
+  </div>
+</div>
